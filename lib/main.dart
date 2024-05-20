@@ -6,9 +6,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Parse().initialize(
-    'WfjdzBnO05J0IZUJnxYGuzLeFwxSPzL6GuQdOLuX',
+    'YOUR_APPLICATION_ID',
     'https://parseapi.back4app.com',
-    clientKey: 'gvfkPecAafusH6MSPBq7qkbrafSgcTqJsgAV2iuE',
+    clientKey: 'YOUR_CLIENT_KEY',
     autoSendSessionId: true,
   );
 
