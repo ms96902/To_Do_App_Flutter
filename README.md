@@ -19,13 +19,8 @@ QuickTask is a to-do management application built using Flutter and Back4App. Th
 - Dart SDK: Comes with Flutter
 - A Back4App account: [Sign up here](https://www.back4app.com/)
 
-### Clone the Repository
+### Configure Backend
 
-```sh
-git clone https://github.com/yourusername/quicktask.git
-cd quicktask
-
-Configure Backend
 Back4App Setup: Create a new application on Back4App and configure the necessary classes (User, Task, etc.).
 Back4App Credentials: Obtain your Application ID and Client Key from Back4App.
 Environment Configuration: Update the lib/config/back4app_config.dart file with your Back4App credentials.
@@ -34,28 +29,28 @@ const String APPLICATION_ID = 'YOUR_APPLICATION_ID';
 const String CLIENT_KEY = 'YOUR_CLIENT_KEY';
 const String SERVER_URL = 'https://parseapi.back4app.com/';
 
-Code Make below change in main.dart file with your credentials which you will get from back4app
+### Make below change in main.dart file with your credentials which you will get from back4app
 await Parse().initialize(
     'YOUR_APPLICATION_ID',
     'https://parseapi.back4app.com',
     clientKey: 'YOUR_CLIENT_KEY',
     autoSendSessionId: true,
   )
-Install Dependencies
+### Install Dependencies
   flutter pub get
 
-Run the App
+### Run the App
   flutter run
 
 
-Usage
+### Usage
 Sign Up: Create a new account using your email and password.
 Log In: Log in with your credentials.
 Add Tasks: Add new tasks with a title, due date, and completion status.
 Manage Tasks: Update or delete tasks, and mark them as completed.
 
 
-Built With
+### Built With
 Flutter - UI toolkit for building natively compiled applications
 Back4App - Backend-as-a-Service platform
 Parse SDK for Flutter - SDK used for integrating Back4App
